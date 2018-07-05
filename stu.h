@@ -16,8 +16,8 @@ public:
 	string stu_Phone;
 	string stu_BrithPlace;
 	int stu_BrithDay;
-	string stu_pwd;
-	CStu(int num=0, int a=0, string n="", string c= "", string s= "", string p= "", string bp= "",int bd=0,string pwd="")
+	string stu_Password;
+	CStu(int num=0, int a=0, string n="", string c= "", string s= "", string p= "", string bp= "",int bd=0,string pwd ="")
 	{
 		stu_Num = num;
 		stu_Age = a;
@@ -27,7 +27,7 @@ public:
 		stu_Phone = p;
 		stu_BrithPlace = bp;
 		stu_BrithDay = bd;
-		stu_pwd = pwd;
+		stu_Password = pwd;
 	}
 
 	//定义函数，检查字符串中是否包含数字
@@ -164,6 +164,7 @@ public:
 		output_stream << a.stu_Num << " " << a.stu_Name << " " << a.stu_Sex << " " << a.stu_Class << " " << a.stu_Age << " " << a.stu_BrithDay << " " << a.stu_BrithPlace << " " << a.stu_Phone << endl;
 		return 1;
 	}
+
 	//定义录入信息函数
 	void addstuInfo(CStu a) 
 	{   
@@ -243,5 +244,4 @@ public:
 		}
 	}
 
-	
 };
